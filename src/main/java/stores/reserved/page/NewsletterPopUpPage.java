@@ -9,11 +9,11 @@ public class NewsletterPopUpPage {
 	private WebDriver driver;
 
 	public NewsletterPopUpPage(WebDriver driver) {
-	this.driver = driver;
+		this.driver = driver;
 	}
 
 	public void closeNewsletterPopUp() {
-		Wait.waitForOneSecond();
+		Wait.waitForThreeSeconds();
 		if (!driver.findElements(By.xpath("//*[@id='newsletterContainer']/div[@class='close']")).isEmpty()) {
 			driver.findElement(By.xpath("//*[@id='newsletterContainer']/div[@class='close']")).click();
 		}
