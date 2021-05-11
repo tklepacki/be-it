@@ -32,7 +32,7 @@ public class LoginTest {
 		commonTestSteps.loadMainPage(URL);
 		WebDriverCreator.setNewsletterCookie(driver);
 		commonTestSteps.loginProcess(email, password);
-		manager.getUserMenuPage().clickAccountIcon();
+		manager.getUserMenuPage().clickAccountCustomerIcon();
 
 		assertTrue(manager.getUserAccountPage().isUserAccountPageDisplayed());
 	}

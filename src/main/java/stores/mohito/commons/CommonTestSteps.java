@@ -19,7 +19,7 @@ public class CommonTestSteps {
 	}
 
 	public void loginProcess(String email, String password) {
-		manager.getUserMenuPage().clickAccountIcon();
+		manager.getUserMenuPage().clickAccountLoginIcon();
 		manager.getLoginPage().sendLogin(email);
 		manager.getLoginPage().sendPassword(password);
 		manager.getLoginPage().clickLoginBtn();
