@@ -54,8 +54,7 @@ Proszę o przyniesienie ze sobą komputera z systemem Linux albo w ostatecznośc
   https://docs.docker.com/compose/install/
   
 - Selenoid Instalation Binary - https://github.com/aerokube/cm/releases
-  Na maszynach z systemem Linux oraz Mac'ach dodaj dostep execution dla pobranej binarki:
-  'chmod +x cm'
+  Na maszynach z systemem Linux oraz Mac'ach dodaj dostep execution dla pobranej binarki: `chmod +x cm`
 
 - Przeglądarki Chrome oraz FireFox w najnowszych wersjach.
 
