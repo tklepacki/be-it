@@ -7,9 +7,6 @@ W celu weryfikacji środowiska na którym będziemy pracować w takcie warsztat�
 
 ## Linki przydatne w trakcie warsztatów:
 
-- Prezentacja, zadania i rozwiązana do zadań:
-https://drive.google.com/open?id=10IekMR2J81T1CjGVrqNRXB4MmyNeUUjp
-
 - Notatki:
 https://docs.google.com/document/d/1RqUe1DkDPB2K4awu-X7C8339D3F7fzcSs3kid5S84Uc/edit?usp=sharing
 
@@ -55,17 +52,15 @@ Proszę o przyniesienie ze sobą komputera z systemem Linux albo w ostatecznośc
 
 - Docker Compose - instalacja wymagana tylko dla komputerów z systemem Linux:
   https://docs.docker.com/compose/install/
-
-- System do zarządzania wersjami - GIT
-  https://git-scm.com/downloads
-
-- VNC Viewer
-  https://www.realvnc.com/en/connect/download/viewer/
+  
+- Selenoid Instalation Binary - https://github.com/aerokube/cm/releases
+  Na maszynach z systemem Linux oraz Mac'ach dodaj dostep execution dla pobranej binarki:
+  'chmod +x cm'
 
 - Przeglądarki Chrome oraz FireFox w najnowszych wersjach.
 
 - Jeśli nie posiadasz jeszcze konta na GitHub prośba o utworzenie:
-  https://github.com/join?source=header-home. Po utworzeniu konta wejdź na https://goo.gl/forms/2tPHSId8UHwB85YF3, podaj nazwę   
+  https://github.com/join?source=header-home. Po utworzeniu konta wejdź na https://forms.gle/4Ey66NezqVANbY419, podaj nazwę   
   użytkownika i wyślij formularz.
 
 ## Weryfikacja środowiska
@@ -78,7 +73,7 @@ Proszę o przyniesienie ze sobą komputera z systemem Linux albo w ostatecznośc
 
 ### Git:
 
-- Sklonuj repozytorium `git clone https://github.com/tklepacki/aa-days.git`
+- Sklonuj repozytorium `git clone https://github.com/tklepacki/be-it.git`
 - Wejdź do folderu z repozytorium i upewnij się, że projekt został pobrany
 - Tylko dla systemów Windows - wejdź to terminal (CMD) i wpisz komendę:
 `ls -al`  
@@ -92,16 +87,7 @@ Upewnij się, że zostały wylistowane pliki/foldery danej lokalizacji i komenda
 
 - Wpisz w konsoli: `docker -v`
 - Upewnij się, iż została podana informacja o wersji zainstalowanego Dockera:
-  *Docker version 18.09.3, build 774a1f4*
-- Pobierz dockerowe obrazy następującymi komendami:  
-`docker pull jenkins/jenkins:lts`  
-`docker pull selenium/hub`  
-`docker pull selenium/node-firefox`  
-`docker pull selenium/node-firefox-debug`  
-`docker pull selenium/node-chrome`  
-`docker pull selenium/node-chrome-debug`  
-`docker pull elgalu/selenium`  
-`docker pull dosel/zalenium`  
+  *Docker version 20.10.5, build 55c4c88*
 - Tylko dla systemów Linux - wpisz następujące komendy:  
 `sudo groupadd docker`  
 `sudo usermod -aG docker $USER`  
