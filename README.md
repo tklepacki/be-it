@@ -104,4 +104,3 @@ Uruchom ponownie swoją maszynę
 
 ## W razie problemów
 Pisz na mój adres email: *t.klepacki@wp.pl*
-"# be-it" 
