@@ -30,7 +30,6 @@ public class LoginTest {
 	public void loginTest(String email, String password) {
 
 		commonTestSteps.loadMainPage(URL);
-		WebDriverCreator.setNewsletterCookie(driver);
 		commonTestSteps.loginUser(email, password);
 		manager.getNewsletterPopUpPage().closeNewsletterPopUp();
 		manager.getUserMenuPage().clickAccountIcon();

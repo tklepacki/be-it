@@ -9,7 +9,7 @@ import utils.Wait;
 
 public class UserAccountPage {
 
-	@FindBy(xpath = "//*[@id='customerAccount']/div/div[1]/ul/li/ul/li[1]/a")
+	@FindBy(xpath = "//*[@id='customerAccount']/div/div[1]/ul/li/ul/li[1]/a | //*[@id='customerAccountNavigation']/ul/li[1]/a")
 	private WebElement userAccountPage;
 
 	private final CustomFluentWait customFluentWait;
@@ -24,3 +24,6 @@ public class UserAccountPage {
 	}
 
 }
+
+//*[@id="customerAccountNavigation"]/ul/li[1]/a
+//*[@id="customerAccount"]/div/div[1]/ul/li/ul/li[1]/a
