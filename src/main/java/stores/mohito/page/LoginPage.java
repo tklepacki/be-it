@@ -1,5 +1,7 @@
 package stores.mohito.page;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -24,7 +26,10 @@ public class LoginPage {
 		passwordTextField.sendKeys(password);
 	}
 
-	public void clickLoginBtn() {
+	public void clickLoginBtn(WebDriver driver) {
+		//scroll to login element
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].scrollIntoView()", loginSubmitBtn);
 		loginSubmitBtn.click();
 	}
 
