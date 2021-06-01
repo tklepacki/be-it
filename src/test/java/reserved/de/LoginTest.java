@@ -2,8 +2,7 @@ package reserved.de;
 
 import static org.testng.Assert.assertTrue;
 
-import com.beust.jcommander.Parameter;
-import driver.RemoteWebDriverCreator;
+import driver.RemoteDriverCreator;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -26,8 +25,8 @@ public class LoginTest {
 
 	@Parameters("browser")
 	@BeforeMethod
-	public void setUp(String browser) {
-		driver = new WebDriverCreator().createDriver(browser);
+	public void setUp(String browser) throws MalformedURLException {
+		driver = new RemoteDriverCreator().createDriver(browser);
 		commonTestSteps = new CommonTestSteps(driver);
 		manager = new PageObjectManager(driver);
 	}

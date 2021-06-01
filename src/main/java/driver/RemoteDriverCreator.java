@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-public class RemoteWebDriverCreator {
+public class RemoteDriverCreator {
 
 	public RemoteWebDriver createDriver(String browser) throws MalformedURLException {
 		switch (browser) {
@@ -32,7 +32,7 @@ public class RemoteWebDriverCreator {
 			case "chrome":
 				DesiredCapabilities chromeCapabilities = new DesiredCapabilities();
 				chromeCapabilities.setCapability("browserName", "chrome");
-				chromeCapabilities.setCapability("browserVersion", "90.0");
+				chromeCapabilities.setCapability("browserVersion", "91.0");
 				Map chromeOptions = new HashMap<>();
 				chromeOptions.put("enableVNC", true);
 				chromeOptions.put("enableVideo", true);
