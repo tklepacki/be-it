@@ -40,6 +40,7 @@ public class LoginTest {
 		manager.getUserMenuPage().clickAccountCustomerIcon();
 
 		assertTrue(manager.getUserAccountPage().isUserAccountPageDisplayed());
+
 	}
 
 	@AfterMethod

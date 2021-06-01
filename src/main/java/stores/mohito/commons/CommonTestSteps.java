@@ -22,7 +22,7 @@ public class CommonTestSteps {
 		manager.getUserMenuPage().clickAccountLoginIcon();
 		manager.getLoginPage().sendLogin(email);
 		manager.getLoginPage().sendPassword(password);
-		manager.getLoginPage().clickLoginBtn();
+		manager.getLoginPage().clickLoginBtn(driver);
 	}
 
 }
