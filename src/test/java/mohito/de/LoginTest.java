@@ -23,10 +23,9 @@ public class LoginTest {
 	private PageObjectManager manager;
 	private static final String URL = "http://mohito.com/de/de";
 
-	@Parameters("browser")
 	@BeforeMethod
-	public void setUp(String browser) throws MalformedURLException {
-		driver = new RemoteWebDriverCreator().createDriver(browser);
+	public void setUp() {
+		driver = new WebDriverCreator().createDriver("chrome");
 		commonTestSteps = new CommonTestSteps(driver);
 		manager = new PageObjectManager(driver);
 	}
