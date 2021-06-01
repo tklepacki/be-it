@@ -4,6 +4,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utils.CustomFluentWait;
+import utils.ScrollToElement;
 
 public class LoginPage {
 
@@ -16,6 +18,12 @@ public class LoginPage {
 	@FindBy(xpath = "//div[@id='loginRegisterRoot']/div/div/div/form/button")
 	private WebElement loginSubmitBtn;
 
+	private ScrollToElement scroll;
+
+	public LoginPage (WebDriver driver) {
+		scroll = new ScrollToElement(driver);
+	}
+
 	public void sendLogin(String email) {
 		emailTextField.clear();
 		emailTextField.sendKeys(email);
@@ -27,9 +35,7 @@ public class LoginPage {
 	}
 
 	public void clickLoginBtn(WebDriver driver) {
-		//scroll to login element
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
-		executor.executeScript("arguments[0].scrollIntoView()", loginSubmitBtn);
+		scroll.scrollToElement(loginSubmitBtn);
 		loginSubmitBtn.click();
 	}
 
